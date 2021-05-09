@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Header Styling Start */
 /* General Header Styling, sets background color, makes a flexbox and sticks to the top of the page.*/
 header {
     background-color: var(--primary-color);
@@ -49,4 +50,25 @@ header ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+/* Header Styling End */
 
+/* Hero Styling Start */
+/* Adds a background image to the hero, links an image, start from the center bottom of the image and has the image cover the .hero element,  */
+/* also creates a padding as a percentage of the page */
+.hero {
+    background-image: url(../assets/images/heroimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 0;
+    justify-content: flex-end;
+}
+
+.hero h3 {
+    margin: 1%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 10px 10px;
+}
