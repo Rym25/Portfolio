@@ -62,7 +62,7 @@ header ul li a {
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
-    padding: 5% 0;
+    padding: 50px 0 0 0;
     justify-content: flex-end;
 }
 
@@ -72,3 +72,35 @@ header ul li a {
     color: var(--secondary-color);
     padding: 10px 10px;
 }
+/* Hero Styling End */
+/* Bio Section Styling Start */
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    margin: 10px 0;
+}
+.bio h2 {
+    flex: 10%;
+    text-align: center;
+    border-right: 4px solid var(--primary-color);
+    margin-right: 10px;
+    font-size: 60px;
+    padding: 40px 5px;
+}
+.bio div {
+    flex: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+.bio img {
+    height: 217px;
+    width: 303px;
+}
+.bio div p {
+    text-align: center;
+}
+/* Bio Section Styling End */
