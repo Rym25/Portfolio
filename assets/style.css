@@ -1,0 +1,52 @@
+/* Creating variables for color scheme */
+:root {
+    --primary-color: #358455;
+    --secondary-color: #FFFFFF;
+    --tertiary-color: #7851a9;
+    --shadows: rgba(0, 0, 0, 0.75);
+}
+/* Whole page styling, deafault butts element against one another and the edges of the view. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Header Styling, sets background color, makes a flexbox and sticks to the top of the page.*/
+header {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: sticky;
+    position: --webkit-sticky;
+    top: 0;
+}
+/* Emphasizes the header */
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px var(--shadows);
+}
+/* Removes underline from links and changes the color */
+header a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+/* Centers the nav element in the top bar */
+header nav {
+    margin: 10px 0;
+}
+/* makes the unordered list a flex box, lets it wrap, and removes the standard tick marks */
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+}
+/* Gives padding to seperate the elements of the screen, a scalable font size for the list items, and makes the list items less emphasized */
+header ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
