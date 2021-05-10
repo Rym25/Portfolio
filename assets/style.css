@@ -89,14 +89,6 @@ header ul li a {
 /* Hero Styling End */
 /* Bio Section Styling Start */
 
-/* creates a flexbox for the whole bio element, and set the flex items to flow in rows */
-/* .bio {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
-    margin: 10px 0;
-} */
-
 /* gives the remaining elements in the bio section 80% of flex width, then provides spacing and aligns items in the center vertically. */
 .bio div {
     flex: 80%;
@@ -119,14 +111,6 @@ header ul li a {
 }
 /* Bio Section Styling End */
 /* Work Section Styling Start */
-/* creates a flexbox for the whole work element, and set the flex items to flow in rows */
-/* .work {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
-    margin: 10px 0;
-} */
-
 .work div {
     flex: 80%;
     display: flex;
@@ -184,14 +168,6 @@ header ul li a {
     border: solid 2px var(--primary-color);
 }
 /* Work Section Styling End */
-
-/* .contact {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row;
-    margin: 10px 0;
-} */
-
 .contact ul {
     width: 80%;
     display: flex;
@@ -251,13 +227,6 @@ header ul li a {
     }
     .led-wall, .calculator, .pastel-puzzles, .run-buddy {
         flex: 100%;
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        justify-content: flex-start;
-        border: solid 10px var(--primary-color);
-        margin-bottom: 10px;
-        margin-right: 10px;
         margin-left: 10px;
     }
     .link-format {
@@ -271,5 +240,17 @@ header ul li a {
     }
     .contact ul {
         width: 100%;
+    }
+    .hero h3 {
+        font-size: 2.5vw;
+    }
+}
+/* Styling for screens 575px and smaller */
+@media screen and (max-width: 575px) {
+    .link-format {
+        font-size: 2.5vw;
+    }
+    .surf-report a {
+        font-size: 2.5vw;
     }
 }
