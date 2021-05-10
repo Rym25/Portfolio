@@ -2,8 +2,6 @@
 :root {
     --primary-color: #358455;
     --secondary-color: #FFFFFF;
-    --tertiary-color: #7851a9;
-    --shadows: rgba(0, 0, 0, 0.75);
 }
 /* Whole page styling, deafault butts element against one another and the edges of the view. */
 * {
@@ -21,12 +19,12 @@ header {
     position: --webkit-sticky;
     top: 0;
     background-color: var(--primary-color);
+    z-index: 9999;
 }
 /* Emphasizes the header */
 header h1 {
     font-size: 36px;
     font-weight: bold;
-    text-shadow: 3px 3px 10px var(--shadows);
 }
 /* Removes underline from links and changes the color */
 header a {
@@ -48,7 +46,7 @@ header ul {
 header ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 1.75vw;
 }
 /* Header Styling End */
 
@@ -82,7 +80,7 @@ header ul li a {
     flex-flow: row;
     margin: 10px 0;
 }
-
+/* Gives the h2 20% of the screen width, creates a right border, and gives a scaling font size to it */
 .bio h2 {
     flex: 20%;
     text-align: center;
@@ -90,8 +88,9 @@ header ul li a {
     margin-right: 10px;
     margin-left: 34px;
     padding-right: 10px;
-    font-size: 60px;
+    font-size: 5vw;
 }
+/* gives the remaining elements in the bio section 80% of flex width, then provides spacing and aligns items in the center vertically. */
 .bio div {
     flex: 80%;
     display: flex;
@@ -100,17 +99,20 @@ header ul li a {
     justify-content: space-evenly;
     align-items: center;
 }
+/* gives the image a border, and scalable sizing. */
 .bio img {
     height: 100%;
     width: 40%;
     object-fit: fill;
     border: 10px solid var(--primary-color);
 }
+/* aligns paragraph text in the center of the p element */
 .bio div p {
     text-align: center;
 }
 /* Bio Section Styling End */
 /* Work Section Styling Start */
+/* creates a flexbox for the whole work element, and set the flex items to flow in rows */
 .work {
     display: flex;
     flex-wrap: wrap;
@@ -124,7 +126,7 @@ header ul li a {
     margin-right: 10px;
     margin-left: 34px;
     padding-right: 10px;
-    font-size: 60px;
+    font-size: 5vw;
     }
 .work div {
     flex: 80%;
@@ -145,6 +147,11 @@ header ul li a {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-decoration: none;
+    font-size: 1.5vw;
+}
+/* changes the opacity of the link when it is hovered over with a mouse */
+.surf-report a:hover {
+    opacity: 75%;
 }
 .surf-report a img {
     height: 90%;
@@ -165,6 +172,11 @@ header ul li a {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-decoration: none;
+    font-size: 1vw;
+}
+/* changes the opacity of the link when it is hovered with the mouse */
+.link-format:hover {
+    opacity: 75%;
 }
 .img-format {
     height: 90%;
@@ -187,7 +199,7 @@ header ul li a {
     margin-right: 10px;
     margin-left: 34px;
     padding-right: 10px;
-    font-size: 66px;
+    font-size: 4.5vw;
     }
 .contact ul {
     width: 80%;
@@ -195,4 +207,35 @@ header ul li a {
     flex-wrap: wrap;
     list-style: none;
     justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vw;
+    text-decoration-line: underline;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.contact ul li a {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+        position: sticky;
+        position: --webkit-sticky;
+        top: 0;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
 }
