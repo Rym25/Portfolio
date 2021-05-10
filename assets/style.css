@@ -9,13 +9,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* Section Header Styling */
+/* Styling for section below the header */
 .section-formating {
     display: flex;
     flex-wrap: wrap;
     flex-flow: row;
     margin: 10px 0;
 }
+/* Section Header Styling */
 .section-header {
     flex: 20%;
     text-align: center;
@@ -116,6 +117,7 @@ header ul li a {
     display: flex;
     flex-wrap: wrap;
 }
+/* stretches the surf report flex item across the flex item, then makes it a flexbox, also adds a margin to the bottom and right of the flex item */
 .surf-report {
     flex: 100%;
     background-position: center;
@@ -126,6 +128,7 @@ header ul li a {
     margin-bottom: 10px;
     margin-right: 10px;
 }
+/* gives the link in surf report item a background color, text color, scalable font size, and remove text-decorations */
 .surf-report a {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -136,11 +139,13 @@ header ul li a {
 .surf-report a:hover {
     opacity: 75%;
 }
+/* stretches the img across the flex item and scales its size accordingly */
 .surf-report a img {
     height: 90%;
     width: 100%;
     object-fit: fill;
 }
+/* stretches the led wall, calculator, pastel puzzles, and run buddy elements 47% across the flex item, then makes them a flexbox, also adds a margin to the bottom and right of the flex item */
 .led-wall, .calculator, .pastel-puzzles, .run-buddy {
     flex: 47%;
     background-position: center;
@@ -151,23 +156,25 @@ header ul li a {
     margin-bottom: 10px;
     margin-right: 10px;
 }
+/* gives the link in the led wall, calculator, pastel puzzles, and run buddy elements items a background color, text color, scalable font size, and remove text-decorations */
 .link-format {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-decoration: none;
     font-size: 1vw;
 }
-/* changes the opacity of the link when it is hovered with the mouse */
+/* changes the opacity of the links when they are hovered with the mouse */
 .link-format:hover {
     opacity: 75%;
 }
+/* stretches the img across the flex item and scales its size accordingly */
 .img-format {
     height: 90%;
     width: 100%;
     object-fit: fill;
-    border: solid 2px var(--primary-color);
 }
 /* Work Section Styling End */
+/* Contact Section Styling Start */
 .contact ul {
     width: 80%;
     display: flex;
@@ -183,6 +190,9 @@ header ul li a {
 .contact ul li a {
     color: var(--primary-color);
 }
+/* Contact Section Styling End */
+
+/* Scalable Screen Styling Start */
 /* adds style changes for screen sizes 980px and smaller */
 @media screen and (max-width: 980px) {
     /* styles header h1 to take up 100% width then wrap the nav elements, centers everything, and sets the nav font size to a default 20px */
@@ -209,11 +219,13 @@ header ul li a {
 }
 /* Styling for screens tablet sized and smaller */
 @media screen and (max-width: 768px) {
+    /* changes section flex formatting to be in colum flow. */
     .section-formating {
         display: flex;
         flex-flow: column;
         margin: 10px 0;
     }
+    /* Moves section headings to the middle of the page, removes the side border, and adds a bottom border. */
     .section-header {
     flex: 100%;
     text-align: center;
@@ -225,6 +237,7 @@ header ul li a {
     margin-bottom: 10px;
     font-size: 4.5vw;
     }
+    /* Stretches work child elements all the way across the page, and adds scaling font to the links */
     .led-wall, .calculator, .pastel-puzzles, .run-buddy {
         flex: 100%;
         margin-left: 10px;
@@ -238,15 +251,18 @@ header ul li a {
     .surf-report {
         margin-left: 10px;
     }
+    /* Makes the ul item stretch the length of the page */
     .contact ul {
         width: 100%;
     }
+    /* gives the quote in the hero element scalable font size */
     .hero h3 {
         font-size: 2.5vw;
     }
 }
 /* Styling for screens 575px and smaller */
 @media screen and (max-width: 575px) {
+    /* increases the scalable font size of the work section links */
     .link-format {
         font-size: 2.5vw;
     }
@@ -254,3 +270,4 @@ header ul li a {
         font-size: 2.5vw;
     }
 }
+/* Scalable Screen Styling End */
