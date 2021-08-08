@@ -145,8 +145,8 @@ header ul li a {
     width: 100%;
     object-fit: fill;
 }
-/* stretches the led wall, calculator, pastel puzzles, and run buddy elements 47% across the flex item, then makes them a flexbox, also adds a margin to the bottom and right of the flex item */
-.led-wall, .calculator, .pastel-puzzles, .run-buddy {
+/* stretches the led wall, quixotic, pastel puzzles, and run buddy elements 47% across the flex item, then makes them a flexbox, also adds a margin to the bottom and right of the flex item */
+.led-wall, .quixotic, .pastel-puzzles, .run-buddy {
     flex: 47%;
     background-position: center;
     background-size: cover;
@@ -156,7 +156,7 @@ header ul li a {
     margin-bottom: 10px;
     margin-right: 10px;
 }
-/* gives the link in the led wall, calculator, pastel puzzles, and run buddy elements items a background color, text color, scalable font size, and remove text-decorations */
+/* gives the link in the led wall, quixotic, pastel puzzles, and run buddy elements items a background color, text color, scalable font size, and remove text-decorations */
 .link-format {
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -238,7 +238,7 @@ header ul li a {
     font-size: 4.5vw;
     }
     /* Stretches work child elements all the way across the page, and adds scaling font to the links */
-    .led-wall, .calculator, .pastel-puzzles, .run-buddy {
+    .led-wall, .quixotic, .pastel-puzzles, .run-buddy {
         flex: 100%;
         margin-left: 10px;
     }
